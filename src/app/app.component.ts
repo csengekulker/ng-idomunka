@@ -1,3 +1,13 @@
+/*
+* File: app.component.ts
+* Author: Balogh Csenge
+* Copyright: 2022, Balogh Csenge
+* Group: Szoft_II_N
+* Date: 2022-11-29
+* Github: https://github.com/csengekulker/
+* Licenc: GNU GPL
+*/
+
 import { Component } from '@angular/core';
 
 @Component({
