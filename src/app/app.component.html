@@ -7,33 +7,49 @@
   <title>Időmunka</title>
 </head>
 <body>
+
+  <div class="container text-center">
+    
+    <h1>Esztergagép</h1>
+    
+      <div class="border bg-light rounded px-4 py-2">
+        <div class="row mb-2">
+          <label class="col">Megmunkált hossz (mm)</label>
+          <input
+            type="text"
+            class="form-control col"
+            [(ngModel)]="length">
+        </div>
+        <div class="row mb-2">
+          <label class="col">Fordulatonkénti előtolás (mm)</label>
+          <input
+            type="text"
+            class="form-control col"
+            [(ngModel)]="lengthfreq">
+        </div>
+        <div class="row mb-2">
+          <label class="col">Főorsó fordulatszám (percenként)</label>
+          <input
+            type="text"
+            class="form-control col"
+            [(ngModel)]="freq">
+        </div>
+
+        <div class="w-50 mb-2 ms-auto me-0">
+          <button class="btn btn-info w-100"
+          (click)="calcTime()">Számítás
+          </button>
+        </div>
+
+      
+
+      <div class="row">
+        <label class="col">Megmunkálási idő (perc)</label>
+        <input type="text" class="form-control col"
+        [(ngModel)]="time">
+      </div>
+    </div>
   
-  <div class="gyepForm">
-
-    <div class="mb-3">
-      <label for="length" class="form-label">Megmunkált hossz (mm)</label>
-      <input type="text" class="form-control"
-      [(ngModel)]="length">
-    </div>
-    <div class="mb-3">
-      <label for="lengthfreq" class="form-label">Fordulatonkénti előtolás (mm)</label>
-      <input type="text" class="form-control"
-      [(ngModel)]="lengthfreq">
-    </div>
-    <div class="mb-3">
-      <label for="freq" class="form-label">Főorsó fordulatszám (fordulatszám percenként)</label>
-      <input type="text" class="form-control"
-      [(ngModel)]="freq">
-    </div>
-
-    <button class="btn btn-info"
-    (click)="calcTime()">Számítás</button>
-
-    <div class="mb-3">
-      <label>Megmunkálási idő (perc)</label>
-      <input type="text" class="form-control"
-      [(ngModel)]="time">
-    </div>
   </div>
 
 
