@@ -13,8 +13,9 @@ export class AppComponent {
   
   time !: number;
 
-  calcArea():void {
-    
-    console.log('jo')
+  calcTime():void {
+
+    this.time = this.length / (this.lengthfreq * this.freq);
+  
   }
 }
