@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'idomunka';
+  length !: number;
+  lengthfreq !: number;
+  freq !: number;
+  
+  time !: number;
+
+  calcArea():void {
+    
+    console.log('jo')
+  }
 }
